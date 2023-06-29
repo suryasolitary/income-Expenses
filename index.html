@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ledger">
+        <h2>Income Expense </h2>
+        <h4>Your Balance</h4>
+        <h1 id="balance">₹ 0.00</h1>
+        <div class="income-expencess">
+            <div class="income">
+                <h3 id="inc">Income</h3>
+                <p id="inc-price" class="inc-price">₹ 0.00</p>
+            </div>
+            <div class="expense">
+                <h3 id="exp">Expense</h3>
+                <p id="exp-price" class="exp-price">₹ 0.00</p>
+            </div>
+        </div>
+        <form action="#" id="form">
+            <div class="form-content">
+                <label for="desc">Description</label>
+                <input type="text" id="desc" name="desc" placeholder="Enter Description">
+            </div>
+            <div class="form-content">
+                 <label for="amount">Amount</label>
+                 <input type="number" name="amount" id="amount" placeholder="Enter Your Amount">
+            </div>
+            <button class="btn-add"> Add Transaction</button>
+        </form>
+        </div>
+
+        <div class="transaction">
+            <div class="trasaction-contet">
+                <h2>Transaction Details</h2>
+                <ul class="trans" id="trans">
+                   <li class="expen">
+                    Insurance
+                    <span>-2000</span>
+                    <button class="btn-del">X</button>
+                   </li>
+                   <li class="inco">
+                    Salary
+                    <span>+30000</span>
+                    <button class="btn-del">X</button>
+                   </li>
+                   <li class="expen">
+                    Food
+                    <span>-5000</span>
+                    <button class="btn-del">X</button>
+                   </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/style.js"></script>
+</body>
+</html>

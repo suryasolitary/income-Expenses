@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+   width: 100vw;
+   height: 100vh;
+   background-color:#bdc3c7 ; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    user-select: none;
+}
+.ledger{
+    flex: 1;
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px;
+}
+.ledger h4,
+.ledger h2,
+.ledger h1{
+     font-weight: 500;
+    margin-bottom: 5px;
+    padding-left :20px;
+}
+.ledger h2{
+    text-transform: uppercase;
+    padding-left:20px;
+    color: #f9ca24;
+    text-align: center;
+}
+.income-expencess{
+   display: flex;
+   padding:10px;
+   gap: 10px;
+   margin-bottom: 15px;
+   
+}
+.income-expencess div{
+      padding: 15px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 400.;
+      flex: 1;
+}
+.income-expencess .income{
+    border: 3px solid #34e7e4;
+    border-radius: 5px;
+    color: #34e7e4;
+}
+.income-expencess .expense{
+    border: 3px solid #eb2f06;
+    color: #eb2f06;
+    border-radius: 5px;
+}
+.form-content{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.form-content label{
+    display: inline-block;
+    margin-bottom:5px ;
+    font-size: 18px;
+}
+.form-content input{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+.btn-add{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 10px 0;
+    background-color: #34e7e4;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.transaction{
+    flex: 1;
+    padding: 10px;
+    overflow-y: scroll;
+
+}
+.transaction h2{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0,0,0,0.1)
+}
+.transaction .tras{
+    list-style: none;
+}
+.transaction li{
+    position: relative;
+    padding: 10px;
+    border: 2px solid rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+}
+.transaction li .btn-del{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #eb2f06;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.transaction .inco{
+    border-left:8px solid #34e7e4;
+
+}
+.transaction .expen{
+    border-left: 8px solid #eb2f06;
+}
+.transaction li:hover .btn-del{
+    opacity: 1;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a4b0be;
+    border-radius :5px ;
+}
